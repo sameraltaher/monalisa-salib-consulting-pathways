@@ -8,33 +8,36 @@
 @layer base {
   :root {
     --background: 210 40% 98%;
-    --foreground: 222.2 84% 4.9%;
-
+    --foreground: 215 30% 15%;
+    
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: 215 30% 15%;
+    
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 205 85% 29%;
+    --popover-foreground: 215 30% 15%;
+    
+    /* Slate blue from business card */
+    --primary: 215 30% 25%;
     --primary-foreground: 210 40% 98%;
-
-    --secondary: 200 55% 25%;
+    
+    /* Teal from business card */
+    --secondary: 170 48% 39%;
     --secondary-foreground: 210 40% 98%;
-
+    
     --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 24 84% 73%;
+    --muted-foreground: 215 16% 47%;
+    
+    /* Seafoam green from business card */
+    --accent: 165 38% 54%;
     --accent-foreground: 222.2 47.4% 11.2%;
-
+    
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-
+    
     --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
+    --input: 214.3 31.8% 91.4%; 
+    --ring: 215 30% 25%;
+    
     --radius: 0.5rem;
   }
 
@@ -44,6 +47,10 @@
 
   body {
     @apply bg-background text-foreground;
+    background-image: url('/pattern-bg-light.png');
+    background-repeat: repeat;
+    background-size: 500px;
+    background-opacity: 0.1;
   }
 
   .container-custom {
@@ -55,18 +62,52 @@
   }
 
   .heading-lg {
-    @apply font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-consulting-800;
+    @apply font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800;
   }
 
   .heading-md {
-    @apply font-serif text-2xl md:text-3xl font-semibold text-consulting-700;
+    @apply font-serif text-2xl md:text-3xl font-semibold text-slate-700;
   }
 
   .heading-sm {
-    @apply font-serif text-xl md:text-2xl font-medium text-consulting-600;
+    @apply font-serif text-xl md:text-2xl font-medium text-slate-700;
   }
 
   .paragraph {
-    @apply text-base md:text-lg text-gray-700 leading-relaxed;
+    @apply text-base md:text-lg text-slate-600 leading-relaxed;
+  }
+  
+  .pattern-bg {
+    position: relative;
+  }
+  
+  .pattern-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/pattern-bg-light.png');
+    background-repeat: repeat;
+    background-size: 500px;
+    opacity: 0.06;
+    z-index: -1;
+  }
+  
+  .seafoam-accent {
+    @apply bg-seafoam text-white;
+  }
+  
+  .slate-accent {
+    @apply bg-slate-800 text-white;
+  }
+  
+  .card-shadow {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .border-accent {
+    @apply border-l-4 border-teal-500 pl-4;
   }
 }

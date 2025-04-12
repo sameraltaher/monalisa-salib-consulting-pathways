@@ -1,5 +1,6 @@
 
 import { Button } from '@/components/ui/button';
+import { ArrowDownCircle } from 'lucide-react';
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -10,37 +11,41 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen pt-24 pb-16 flex items-center">
+    <section className="relative min-h-screen pt-28 pb-16 flex items-center overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute right-0 top-20 w-1/2 h-1/2 bg-consulting-50 rounded-l-full opacity-50" />
-        <div className="absolute left-10 bottom-20 w-64 h-64 bg-accent1-light rounded-full opacity-30" />
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <div className="absolute right-0 top-0 w-full h-full bg-seafoam-light opacity-10"></div>
+        <div className="absolute right-0 top-0 w-1/2 h-1/2 bg-slate-800 opacity-5 rounded-bl-[200px]"></div>
+        <div className="absolute left-0 bottom-0 w-64 h-64 bg-seafoam opacity-10 rounded-full"></div>
       </div>
 
       <div className="container-custom relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7 animate-fade-up">
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-consulting-800 leading-tight mb-6">
-              Leadership Expertise & <span className="text-accent2-DEFAULT">Strategic Consulting</span>
+            <div className="border-l-4 border-teal-500 pl-6 mb-6">
+              <h2 className="font-medium text-slate-600 text-xl mb-0">Leadership & Strategic Consulting</h2>
+            </div>
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-slate-800 leading-tight mb-6">
+              Monalisa <span className="text-teal-500">Salib</span>
             </h1>
             
-            <p className="text-xl text-gray-700 mb-8 max-w-2xl">
+            <p className="text-xl text-slate-600 mb-8 max-w-2xl">
               With over 18 years of international aid leadership experience, 
-              Monalisa Salib brings a unique perspective to help organizations 
-              navigate complex challenges and achieve transformative results.
+              I help organizations navigate complex challenges and achieve transformative results.
             </p>
             
             <div className="flex flex-wrap gap-4">
               <Button 
                 onClick={scrollToContact}
-                className="bg-consulting-600 hover:bg-consulting-700 text-white px-8 py-6 text-lg"
+                className="bg-teal-500 hover:bg-teal-600 text-white px-8 py-6 text-lg rounded-md"
               >
                 Work With Me
+                <ArrowDownCircle className="ml-2 h-5 w-5" />
               </Button>
               
               <Button 
                 variant="outline" 
-                className="border-consulting-500 text-consulting-600 hover:bg-consulting-50 px-8 py-6 text-lg"
+                className="border-slate-700 text-slate-700 hover:bg-slate-50 px-8 py-6 text-lg"
                 onClick={() => {
                   const servicesSection = document.getElementById('services');
                   if (servicesSection) {
@@ -55,21 +60,40 @@ const Hero = () => {
           
           <div className="lg:col-span-5 animate-fade-in">
             <div className="relative">
-              {/* Placeholder for profile image */}
-              <div className="bg-gradient-to-r from-consulting-100 to-consulting-200 h-[500px] rounded-lg flex items-center justify-center">
-                <div className="text-consulting-700 text-center p-6">
-                  <p className="text-lg font-medium mb-2">Profile Photo</p>
-                  <p className="text-sm">A professional headshot of Monalisa Salib would be displayed here</p>
+              <div className="absolute -top-4 -right-4 w-full h-full border-2 border-teal-500 rounded-lg -z-10"></div>
+              <div className="absolute -bottom-4 -left-4 w-full h-full border-2 border-slate-700 rounded-lg -z-10"></div>
+              
+              {/* Profile image placeholder with business card styling */}
+              <div className="bg-white shadow-lg rounded-lg p-8 relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-32 h-32 bg-slate-800 rounded-br-[100px] -ml-10 -mt-10 opacity-10"></div>
+                <div className="absolute bottom-0 right-0 w-32 h-32 bg-seafoam rounded-tl-[100px] -mr-10 -mb-10 opacity-10"></div>
+                
+                <div className="h-[400px] rounded-lg flex flex-col items-center justify-center text-center relative z-10">
+                  <div className="w-32 h-32 rounded-full bg-seafoam-light mb-6 flex items-center justify-center">
+                    <span className="text-teal-700 text-4xl font-serif font-bold">MS</span>
+                  </div>
+                  <p className="text-slate-600 mb-3 font-medium text-lg">Monalisa Salib</p>
+                  <p className="text-slate-500 mb-4 text-sm tracking-wider">CONSULTANT</p>
+                  
+                  <div className="w-40 h-1 bg-teal-500 mb-4"></div>
+                  
+                  <div className="text-slate-600 text-sm space-y-2">
+                    <p>Program and team leadership</p>
+                    <p>Strategy and program design</p>
+                    <p>Monitoring, evaluation, and learning</p>
+                    <p>Organization development</p>
+                    <p>Facilitation & training</p>
+                  </div>
                 </div>
               </div>
-              
-              {/* Decorative Elements */}
-              <div className="absolute -bottom-5 -left-5 w-32 h-32 bg-accent1-DEFAULT rounded-lg -z-10"></div>
-              <div className="absolute -top-5 -right-5 w-24 h-24 border-2 border-consulting-400 rounded-lg -z-10"></div>
             </div>
           </div>
         </div>
       </div>
+      
+      {/* Circular decorative element similar to business card */}
+      <div className="absolute -left-32 top-1/3 w-64 h-64 border-2 border-seafoam rounded-full opacity-10"></div>
+      <div className="absolute -right-32 bottom-1/4 w-64 h-64 border-2 border-slate-700 rounded-full opacity-10"></div>
     </section>
   );
 };

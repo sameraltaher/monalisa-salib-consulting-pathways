@@ -43,9 +43,15 @@ const Navbar = () => {
           <div className="flex items-center">
             <a 
               href="#" 
-              className="text-2xl font-serif font-bold text-consulting-800 mr-10"
+              className="flex items-center"
             >
-              Monalisa Salib
+              <div className="w-10 h-10 rounded-full flex items-center justify-center mr-3 bg-slate-800">
+                <span className="text-white text-sm font-bold">MS</span>
+              </div>
+              <div>
+                <span className="text-xl font-serif font-bold text-slate-800">Monalisa Salib</span>
+                <span className="block text-xs text-slate-600 tracking-wider">CONSULTANT</span>
+              </div>
             </a>
           </div>
 
@@ -53,31 +59,31 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-8">
             <button 
               onClick={() => scrollToSection('about')}
-              className="text-consulting-700 hover:text-consulting-500 transition-colors font-medium"
+              className="text-slate-700 hover:text-teal-500 transition-colors font-medium"
             >
               About
             </button>
             <button 
               onClick={() => scrollToSection('services')}
-              className="text-consulting-700 hover:text-consulting-500 transition-colors font-medium"
+              className="text-slate-700 hover:text-teal-500 transition-colors font-medium"
             >
               Services
             </button>
             <button 
               onClick={() => scrollToSection('experience')}
-              className="text-consulting-700 hover:text-consulting-500 transition-colors font-medium"
+              className="text-slate-700 hover:text-teal-500 transition-colors font-medium"
             >
               Experience
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
-              className="text-consulting-700 hover:text-consulting-500 transition-colors font-medium"
+              className="text-slate-700 hover:text-teal-500 transition-colors font-medium"
             >
               Contact
             </button>
             <Button
               onClick={() => scrollToSection('contact')}
-              className="bg-consulting-600 hover:bg-consulting-700 text-white"
+              className="bg-teal-500 hover:bg-teal-600 text-white"
             >
               Get In Touch
             </Button>
@@ -87,7 +93,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button 
               onClick={toggleMenu}
-              className="p-2 text-consulting-800"
+              className="p-2 text-slate-800"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -100,31 +106,31 @@ const Navbar = () => {
             <div className="flex flex-col space-y-4">
               <button 
                 onClick={() => scrollToSection('about')}
-                className="py-2 px-4 text-consulting-700 hover:bg-consulting-50 rounded-md transition-colors text-left"
+                className="py-2 px-4 text-slate-700 hover:bg-slate-50 rounded-md transition-colors text-left"
               >
                 About
               </button>
               <button 
                 onClick={() => scrollToSection('services')}
-                className="py-2 px-4 text-consulting-700 hover:bg-consulting-50 rounded-md transition-colors text-left"
+                className="py-2 px-4 text-slate-700 hover:bg-slate-50 rounded-md transition-colors text-left"
               >
                 Services
               </button>
               <button 
                 onClick={() => scrollToSection('experience')}
-                className="py-2 px-4 text-consulting-700 hover:bg-consulting-50 rounded-md transition-colors text-left"
+                className="py-2 px-4 text-slate-700 hover:bg-slate-50 rounded-md transition-colors text-left"
               >
                 Experience
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
-                className="py-2 px-4 text-consulting-700 hover:bg-consulting-50 rounded-md transition-colors text-left"
+                className="py-2 px-4 text-slate-700 hover:bg-slate-50 rounded-md transition-colors text-left"
               >
                 Contact
               </button>
               <Button
                 onClick={() => scrollToSection('contact')}
-                className="mx-4 bg-consulting-600 hover:bg-consulting-700 text-white"
+                className="mx-4 bg-teal-500 hover:bg-teal-600 text-white"
               >
                 Get In Touch
               </Button>
