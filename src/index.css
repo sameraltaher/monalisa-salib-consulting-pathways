@@ -47,10 +47,6 @@
 
   body {
     @apply bg-background text-foreground;
-    background-image: url('/pattern-bg-light.png');
-    background-repeat: repeat;
-    background-size: 500px;
-    background-opacity: 0.1;
   }
 
   .container-custom {
@@ -88,7 +84,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/pattern-bg-light.png');
+    background-image: url('/lovable-uploads/64032014-1086-469a-9f81-6c847997bef5.png');
     background-repeat: repeat;
     background-size: 500px;
     opacity: 0.06;
@@ -109,5 +105,24 @@
   
   .border-accent {
     @apply border-l-4 border-teal-500 pl-4;
+  }
+
+  /* Background pattern decorations */
+  .bg-woven-pattern {
+    background-image: url('/lovable-uploads/64032014-1086-469a-9f81-6c847997bef5.png');
+    background-repeat: repeat;
+    background-size: 500px;
+  }
+
+  .slate-circle-element {
+    background-image: url('/lovable-uploads/17975ecc-5052-4e25-8433-0c4c4fd02dc2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .teal-circle-element {
+    background-image: url('/lovable-uploads/f91bb89a-4272-4b7e-8d0c-c2af91cc5aab.png');
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }

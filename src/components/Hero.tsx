@@ -14,9 +14,21 @@ const Hero = () => {
     <section className="relative min-h-screen pt-28 pb-16 flex items-center overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <div className="absolute right-0 top-0 w-full h-full bg-seafoam-light opacity-10"></div>
-        <div className="absolute right-0 top-0 w-1/2 h-1/2 bg-slate-800 opacity-5 rounded-bl-[200px]"></div>
-        <div className="absolute left-0 bottom-0 w-64 h-64 bg-seafoam opacity-10 rounded-full"></div>
+        {/* Additional pattern elements specific to hero */}
+        <div className="absolute -top-20 -right-20 w-[300px] h-[300px]">
+          <img 
+            src="/lovable-uploads/17975ecc-5052-4e25-8433-0c4c4fd02dc2.png" 
+            alt="" 
+            className="w-full h-full object-contain opacity-30"
+          />
+        </div>
+        <div className="absolute bottom-10 left-10 w-[200px] h-[200px]">
+          <img 
+            src="/lovable-uploads/f91bb89a-4272-4b7e-8d0c-c2af91cc5aab.png" 
+            alt="" 
+            className="w-full h-full object-contain opacity-30"
+          />
+        </div>
       </div>
 
       <div className="container-custom relative z-10">
@@ -64,7 +76,8 @@ const Hero = () => {
               <div className="absolute -bottom-4 -left-4 w-full h-full border-2 border-slate-700 rounded-lg -z-10"></div>
               
               {/* Profile image placeholder with business card styling */}
-              <div className="bg-white shadow-lg rounded-lg p-8 relative overflow-hidden">
+              <div className="bg-white shadow-lg rounded-lg p-8 relative overflow-hidden backdrop-blur-sm">
+                <div className="absolute top-0 left-0 w-full h-full bg-woven-pattern opacity-5 z-0"></div>
                 <div className="absolute top-0 left-0 w-32 h-32 bg-slate-800 rounded-br-[100px] -ml-10 -mt-10 opacity-10"></div>
                 <div className="absolute bottom-0 right-0 w-32 h-32 bg-seafoam rounded-tl-[100px] -mr-10 -mb-10 opacity-10"></div>
                 
