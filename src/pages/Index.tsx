@@ -11,10 +11,10 @@ import { Separator } from "@/components/ui/separator";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
-      {/* Background pattern elements */}
+      {/* Background pattern elements - moved to top level for consistent application */}
       <div className="fixed inset-0 z-0 opacity-10">
-        {/* Woven pattern background */}
-        <div className="absolute inset-0 bg-repeat" style={{ backgroundImage: 'url("/lovable-uploads/64032014-1086-469a-9f81-6c847997bef5.png")', backgroundSize: '500px' }}></div>
+        {/* Woven pattern background - full page */}
+        <div className="absolute inset-0 bg-woven-pattern"></div>
         
         {/* Slate blue circle - top right */}
         <div className="absolute -top-64 -right-64 w-[600px] h-[600px]">
@@ -39,9 +39,13 @@ const Index = () => {
         <Navbar />
         <Hero />
         
-        {/* About Me Section - Minimalist Approach */}
-        <section id="about" className="py-16 bg-white bg-opacity-80 backdrop-blur-sm">
-          <div className="container-custom">
+        {/* About Me Section - Added woven pattern background */}
+        <section 
+          id="about" 
+          className="py-16 bg-white bg-opacity-90 backdrop-blur-sm relative overflow-hidden"
+        >
+          <div className="absolute inset-0 bg-woven-pattern opacity-5 z-0"></div>
+          <div className="container-custom relative z-10">
             <h2 className="heading-lg text-center mb-12 font-serif">About Me</h2>
             <About />
           </div>
@@ -49,9 +53,13 @@ const Index = () => {
         
         <Separator className="h-px bg-slate-200 w-full my-4" />
         
-        {/* Services Section - For Potential Clients */}
-        <section id="services" className="py-16 bg-slate-50 bg-opacity-80 backdrop-blur-sm">
-          <div className="container-custom">
+        {/* Services Section - Added woven pattern background */}
+        <section 
+          id="services" 
+          className="py-16 bg-slate-50 bg-opacity-90 backdrop-blur-sm relative overflow-hidden"
+        >
+          <div className="absolute inset-0 bg-woven-pattern opacity-5 z-0"></div>
+          <div className="container-custom relative z-10">
             <h2 className="heading-lg text-center mb-12 font-serif">Services</h2>
             <p className="text-center text-slate-600 max-w-2xl mx-auto mb-16">
               Specialized consulting solutions tailored for organizations seeking to navigate 
@@ -63,9 +71,13 @@ const Index = () => {
         
         <Separator className="h-px bg-slate-200 w-full my-4" />
         
-        {/* Products Created Section */}
-        <section id="experience" className="py-16 bg-white bg-opacity-80 backdrop-blur-sm">
-          <div className="container-custom">
+        {/* Products Created Section - Added woven pattern background */}
+        <section 
+          id="experience" 
+          className="py-16 bg-white bg-opacity-90 backdrop-blur-sm relative overflow-hidden"
+        >
+          <div className="absolute inset-0 bg-woven-pattern opacity-5 z-0"></div>
+          <div className="container-custom relative z-10">
             <h2 className="heading-lg text-center mb-12 font-serif">Products Created</h2>
             <p className="text-center text-slate-600 max-w-2xl mx-auto mb-16">
               A showcase of frameworks, tools, and methodologies I've developed to help 
