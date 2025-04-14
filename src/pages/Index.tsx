@@ -45,10 +45,10 @@ const Index = () => {
           className="py-16 bg-white bg-opacity-90 backdrop-blur-sm relative overflow-hidden"
         >
           <div className="absolute inset-0 bg-woven-pattern opacity-5 z-0"></div>
-          <div className="container-custom relative z-10">
+          {/*<div className="container-custom relative z-10">
             <h2 className="heading-lg text-center mb-12 font-serif">About Me</h2>
             <About />
-          </div>
+          </div>*/} {/*removed this*/}
         </section>
         
         <Separator className="h-px bg-slate-200 w-full my-4" />
