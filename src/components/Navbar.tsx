@@ -49,7 +49,7 @@ const Navbar = () => {
                 <span className="text-white text-sm font-bold">MS</span>
               </div>
               <div>
-                <span className="text-xl font-serif font-bold text-slate-800">Strategic Thought Partner and Make It Happen Maestro</span>
+                <span className="text-xl font-serif font-bold text-slate-800">Monalisa Salib</span>
             
               </div>
             </a>
