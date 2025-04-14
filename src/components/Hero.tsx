@@ -83,7 +83,7 @@ const Hero = () => {
                 
                 <div className="h-[400px] rounded-lg flex flex-col items-center justify-center text-center relative z-10">
                   <div className="w-32 h-32 rounded-full bg-seafoam-light mb-6 flex items-center justify-center">
-                    <span className="text-teal-700 text-4xl font-serif font-bold">Area of Expertise</span>
+                    <span className="text-teal-700 text-4xl font-serif font-bold">MS</span>
                   </div>
                   <p className="text-slate-600 mb-3 font-medium text-lg">Monalisa Salib</p>
                   <p className="text-slate-500 mb-4 text-sm tracking-wider">CONSULTANT</p>
