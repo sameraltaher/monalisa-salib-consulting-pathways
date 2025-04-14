@@ -50,7 +50,7 @@ const Navbar = () => {
               </div>
               <div>
                 <span className="text-xl font-serif font-bold text-slate-800">Monalisa Salib</span>
-                <span className="block text-xs text-slate-600 tracking-wider">CONSULTANT</span>
+                <span className="block text-xs text-slate-600 tracking-wider">Strategic Thought Partner and Make It Happen Maestro</span>
               </div>
             </a>
           </div>
