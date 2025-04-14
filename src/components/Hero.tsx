@@ -35,7 +35,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7 animate-fade-up">
             <div className="border-l-4 border-teal-500 pl-6 mb-6">
-              <h2 className="font-medium text-slate-600 text-xl mb-0">Strategic Thought Partner and Make It Happen Maestro</h2>
+              <h2 className="font-medium text-slate-600 text-xl mb-0">Strategic Thought Partner & Make It Happen Maestro</h2>
             </div>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-slate-800 leading-tight mb-6">
               Monalisa <span className="text-teal-500">Salib</span>
@@ -83,7 +83,7 @@ const Hero = () => {
                 
                 <div className="h-[400px] rounded-lg flex flex-col items-center justify-center text-center relative z-10">
                   <div className="w-32 h-32 rounded-full bg-seafoam-light mb-6 flex items-center justify-center">
-                    <span className="text-teal-700 text-4xl font-serif font-bold">MS</span>
+                    <span className="text-teal-700 text-4xl font-serif font-bold">Area of Expertise</span>
                   </div>
                   <p className="text-slate-600 mb-3 font-medium text-lg">Monalisa Salib</p>
                   <p className="text-slate-500 mb-4 text-sm tracking-wider">CONSULTANT</p>
