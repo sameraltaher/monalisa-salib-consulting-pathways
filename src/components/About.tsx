@@ -12,11 +12,10 @@ const About = () => {
         {/* Section Header */}
         <div className="mb-16 text-center">
           <div className="inline-block border-b-2 border-teal-500 mb-4">
-            <h2 className="heading-lg text-slate-800 mb-2">About Monalisa</h2>
+            <h2 className="heading-lg text-slate-800 mb-2">About Me</h2>
           </div>
           <p className="paragraph text-slate-600 max-w-3xl mx-auto">
-            Transitioning from a distinguished career in international aid to strategic consulting, 
-            bringing a wealth of experience in leadership, organizational development, and systems thinking.
+          I am a mission-driven, international development leader with 20 years of experience across 17 countries. I have helped organizations, teams, communities, and individuals achieve their goals and thrive while doing so. 
           </p>
         </div>
 
