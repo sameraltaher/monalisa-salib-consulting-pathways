@@ -42,8 +42,8 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl text-slate-600 mb-8 max-w-2xl">
-              With over 18 years of international aid leadership experience, 
-              I help organizations navigate complex challenges and achieve transformative results.
+              With over 20 years of international development experience, 
+              I help organizations navigate complex challenges and achieve meaningful results.
             </p>
             
             <div className="flex flex-wrap gap-4">
