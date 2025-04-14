@@ -35,10 +35,10 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7 animate-fade-up">
             <div className="border-l-4 border-teal-500 pl-6 mb-6">
-              <h2 className="font-medium text-slate-600 text-xl mb-0">Leadership & Strategic Consulting</h2>
+              <h2 className="font-medium text-slate-600 text-xl mb-0"> </h2>
             </div>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-slate-800 leading-tight mb-6">
-              Monalisa <span className="text-teal-500">Salib</span>
+                <span className="text-teal-500"> </span>
             </h1>
             
             <p className="text-xl text-slate-600 mb-8 max-w-2xl">
